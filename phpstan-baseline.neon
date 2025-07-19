@@ -1,0 +1,181 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Exceptions/AttributeNotFoundException.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 2
+			path: src/Exceptions/JsonEncodingException.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Exceptions/RelationNotFoundException.php
+
+		-
+			message: "#^Call to function is_null\\(\\) with string will always evaluate to false\\.$#"
+			count: 1
+			path: src/Helpers/ArrayHelper.php
+
+		-
+			message: "#^Instanceof between \\*NEVER\\* and Joomla\\\\Entity\\\\Helpers\\\\Collection will always evaluate to false\\.$#"
+			count: 1
+			path: src/Helpers/Collection.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function strtoupper expects string, bool given\\.$#"
+			count: 1
+			path: src/Helpers/Collection.php
+
+		-
+			message: "#^Result of \\|\\| is always true\\.$#"
+			count: 1
+			path: src/Helpers/Collection.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 2
+			path: src/Helpers/Collection.php
+
+		-
+			message: "#^Access to an undefined property Joomla\\\\Entity\\\\Model\\:\\:\\$createdAt\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Access to an undefined property Joomla\\\\Entity\\\\Model\\:\\:\\$updatedAt\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Helpers\\\\Collection\\:\\:each\\(\\)\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Call to deprecated method pluralize\\(\\) of class Doctrine\\\\Common\\\\Inflector\\\\Inflector\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Call to deprecated method singularize\\(\\) of class Doctrine\\\\Common\\\\Inflector\\\\Inflector\\.$#"
+			count: 2
+			path: src/Model.php
+
+		-
+			message: "#^Method Joomla\\\\Entity\\\\Model\\:\\:incrementOrDecrement\\(\\) should return int\\|Joomla\\\\Entity\\\\Model but returns bool\\.$#"
+			count: 2
+			path: src/Model.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(string/array \\$value \\= attribute\\(s\\) to be made hidden for serialization\\)\\: Unexpected token \"/array\", expected variable at offset 112$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(string/array \\$value \\= attribute\\(s\\) to be made hidden for serialization\\)\\: Unexpected token \"/array\", expected variable at offset 115$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Parameter \\#3 \\$lazy of method Joomla\\\\Entity\\\\Model\\:\\:incrementOrDecrement\\(\\) expects float\\|int, bool given\\.$#"
+			count: 2
+			path: src/Model.php
+
+		-
+			message: "#^Property Joomla\\\\Entity\\\\Model\\:\\:\\$table \\(string\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Static method Joomla\\\\Entity\\\\Model\\:\\:getMutatorMethods\\(\\) invoked with 1 parameter, 0 required\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between DateTime\\|int and string will always evaluate to false\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between string and false will always evaluate to false\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Variable \\$relation might not be defined\\.$#"
+			count: 1
+			path: src/Model.php
+
+		-
+			message: "#^Access to an undefined property Joomla\\\\Database\\\\QueryInterface\\:\\:\\$select\\.$#"
+			count: 1
+			path: src/Query.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Query\\:\\:setLimit\\(\\)\\.$#"
+			count: 1
+			path: src/Query.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Query\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/Query.php
+
+		-
+			message: "#^Call to function is_null\\(\\) with string will always evaluate to false\\.$#"
+			count: 1
+			path: src/Query.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\<string\\>, array\\<int\\<0, max\\>, array\\|string\\> given\\.$#"
+			count: 1
+			path: src/Query.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Query\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/Relations/BelongsTo.php
+
+		-
+			message: "#^Access to an undefined property Joomla\\\\Entity\\\\Model\\:\\:\\$updatedAt\\.$#"
+			count: 1
+			path: src/Relations/HasOneOrMany.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Query\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/Relations/HasOneOrMany.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Relations\\\\HasOneOrMany\\:\\:convertAliasedToRaw\\(\\)\\.$#"
+			count: 3
+			path: src/Relations/HasOneOrMany.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Relations\\\\HasOneOrMany\\:\\:find\\(\\)\\.$#"
+			count: 1
+			path: src/Relations/HasOneOrMany.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Relations\\\\HasOneOrMany\\:\\:getDb\\(\\)\\.$#"
+			count: 3
+			path: src/Relations/HasOneOrMany.php
+
+		-
+			message: "#^Call to an undefined method Joomla\\\\Entity\\\\Relations\\\\HasOneOrMany\\:\\:where\\(\\)\\.$#"
+			count: 2
+			path: src/Relations/HasOneOrMany.php
+
+		-
+			message: "#^Method Joomla\\\\Entity\\\\Relations\\\\HasOneOrMany\\:\\:updateRelated\\(\\) should return int but returns bool\\.$#"
+			count: 1
+			path: src/Relations/HasOneOrMany.php
